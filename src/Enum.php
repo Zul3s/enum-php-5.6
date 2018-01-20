@@ -7,7 +7,7 @@ use Zul3s\EnumPhp\Interfaces\EnumInterface;
 
 /**
  * Class Enum
- * Advanced Php Enum Type for PHP >= 5.6
+ * Advanced Php Enum Type for PHP 5.6
  *
  * @package Zul3s\EnumPhp-5.6
  *
@@ -133,7 +133,7 @@ abstract class Enum implements EnumInterface, JsonSerializable
      * Return instance of called class enum with const name
      *
      * @param $key
-     * @return EnumInterface
+     * @return $this
      * @throws \UnexpectedValueException
      * @throws \ReflectionException
      */
@@ -150,7 +150,7 @@ abstract class Enum implements EnumInterface, JsonSerializable
      *
      * @param $value
      * @param bool $strict compare the type to be sure
-     * @return EnumInterface
+     * @return $this
      * @throws \UnexpectedValueException
      * @throws \ReflectionException
      */

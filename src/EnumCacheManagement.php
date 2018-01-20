@@ -108,7 +108,7 @@ abstract class EnumCacheManagement
      * @param $className
      * @param $constName
      * @throws \UnexpectedValueException
-     * @return EnumInterface
+     * @return Enum
      * @throws \ReflectionException
      */
     public static function getInstanceByName($className, $constName)
@@ -125,7 +125,7 @@ abstract class EnumCacheManagement
      * @param $constValue
      * @param bool $strict
      * @throws \UnexpectedValueException
-     * @return EnumInterface
+     * @return mixed
      * @throws \ReflectionException
      */
     public static function getInstanceByValue($className, $constValue, $strict)
